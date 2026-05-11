@@ -1,0 +1,235 @@
+# MVP Scope
+
+## Purpose
+
+The MVP defines the smallest useful version of Fatoora.
+
+The goal is not to build a full accounting system.  
+The goal is to build a polished mobile-first invoicing app that helps Arab freelancers create and share professional invoices quickly.
+
+## MVP Goal
+
+A user should be able to:
+
+1. Register or log in
+2. Set up basic business information
+3. Add clients
+4. Create invoices
+5. Add invoice items
+6. Automatically calculate totals
+7. Generate an Arabic or English PDF invoice
+8. Share the invoice through WhatsApp or email
+9. Track invoice status
+
+## Core User Journey
+
+The main journey of the MVP is:
+
+1. User opens the app
+2. User logs in
+3. User adds business profile information
+4. User adds a client
+5. User creates a new invoice
+6. User adds invoice items
+7. App calculates subtotal and total
+8. User previews the invoice PDF
+9. User shares the PDF with the client
+10. User updates invoice status later
+
+## Included Features
+
+### Authentication
+
+The MVP includes:
+
+- Register with email and password
+- Login with email and password
+- JWT-based authentication
+- Basic protected routes
+
+The MVP does not include:
+
+- Social login
+- Magic links
+- Two-factor authentication
+- Password reset flow
+
+### Business Profile
+
+The MVP includes:
+
+- Freelancer name
+- Business name
+- Email
+- Phone number
+- Default currency
+- Default language
+
+The MVP does not include:
+
+- Logo upload
+- Multiple businesses
+- Team members
+- Company verification
+
+### Client Management
+
+The MVP includes:
+
+- Add client
+- Edit client
+- Delete client
+- View client list
+
+Client fields:
+
+- Name
+- Email
+- Phone
+- Address
+- Notes
+
+The MVP does not include:
+
+- Client portal
+- Client login
+- Client payment history
+- Advanced CRM features
+
+### Invoice Management
+
+The MVP includes:
+
+- Create invoice
+- View invoice list
+- View invoice details
+- Edit draft invoice
+- Delete draft invoice
+- Change invoice status
+
+Invoice statuses:
+
+- Draft
+- Unpaid
+- Paid
+- Overdue
+
+The MVP does not include:
+
+- Recurring invoices
+- Invoice templates management
+- Advanced filters
+- Accounting reports
+
+### Invoice Items
+
+The MVP includes:
+
+- Add item description
+- Add quantity
+- Add unit price
+- Calculate item total
+- Calculate invoice subtotal
+- Calculate invoice total
+
+The MVP does not include:
+
+- Product inventory
+- Saved products
+- Stock management
+
+### PDF Generation
+
+The MVP includes:
+
+- Arabic PDF layout
+- English PDF layout
+- Basic RTL support
+- Freelancer information
+- Client information
+- Invoice items table
+- Totals
+- Notes
+
+The MVP does not include:
+
+- Multiple visual templates
+- Advanced branding
+- Tax authority compliance
+- Digital signature
+
+### Sharing
+
+The MVP includes:
+
+- Share generated PDF through the native mobile share sheet
+- WhatsApp sharing through the system share menu
+- Email sharing through the system share menu
+
+The MVP does not include:
+
+- Direct WhatsApp Business API integration
+- In-app email sending
+- Payment links
+
+### Dashboard
+
+The MVP includes:
+
+- Total invoices count
+- Paid invoices count
+- Unpaid invoices count
+- Overdue invoices count
+- Recent invoices list
+
+The MVP does not include:
+
+- Revenue charts
+- Monthly reports
+- Tax reports
+- Analytics dashboard
+
+## Explicit Non-goals
+
+The following features are not part of the MVP:
+
+- Online payments
+- Subscriptions
+- Teams
+- Inventory
+- ZATCA compliance
+- Tax authority integrations
+- Web dashboard
+- AI invoice generation
+- Multi-business accounts
+- Advanced accounting
+- Client portal
+
+## MVP Success Criteria
+
+The MVP is complete when a user can successfully complete this flow:
+
+1. Register a new account
+2. Log in
+3. Add business information
+4. Add one client
+5. Create one invoice with at least two items
+6. Generate a clean Arabic PDF
+7. Share the PDF using the phone share menu
+8. Mark the invoice as paid
+
+## Quality Bar
+
+The MVP should feel small but polished.
+
+Important quality requirements:
+
+- Clean mobile UI
+- Good Arabic typography
+- Proper RTL support
+- Clear error messages
+- Strong form validation
+- No hardcoded user data
+- No exposed secrets
+- No broken invoice calculations
+- No confusing navigation
